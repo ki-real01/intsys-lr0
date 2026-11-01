@@ -56,6 +56,14 @@ python search.py --export-best          # -> configs/best.yaml, затем за�
 python run_series.py --series final --config configs/base.yaml configs/best.yaml --seeds 101 102 103 104 105 --eval-test
 ```
 
+Отчёт (таблицы, графики и `report/REPORT.md` строятся из `runs/`, `optuna.db`, `mlflow.db`):
+
+```powershell
+python make_report.py
+```
+
+**Отчёт: [report/REPORT.md](report/REPORT.md).** Артефакты итоговых запусков (`runs/`, `optuna.db`, `mlflow.db`, `mlruns/`) — архив `lr0_artifacts.zip`, сдаётся отдельно; распаковать в корень репозитория.
+
 Один запуск вручную: `python train.py --config configs/base.yaml --seed 0 [--eval-test]`.
 
 ## MLflow

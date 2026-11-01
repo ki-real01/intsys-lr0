@@ -11,6 +11,7 @@ mlruns/
 mlflow.db
 optuna.db
 optuna_debug.db
+lr0_artifacts.zip
 
 # методички преподавателя (лежат рядом для удобства)
 LR0_experiment_harness.pdf

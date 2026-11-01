@@ -64,4 +64,4 @@ python run_series.py --series final --config configs/base.yaml configs/best.yaml
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 
-Открыть http://127.0.0.1:5000, эксперимент `lr0`.
+Открыть http://127.0.0.1:5000, эксперимент `lr0`. Журнал — `mlflow.db`, файлы-артефакты — `mlruns/`; вместе с `runs/` и `optuna.db` они не попадают в git и сдаются архивом.

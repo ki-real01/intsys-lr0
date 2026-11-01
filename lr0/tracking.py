@@ -116,6 +116,9 @@ def compute_metrics(run_path):
 # ---------- MLflow ----------
 
 def setup_mlflow(experiment):
+    import os
+
+    os.environ.setdefault("MLFLOW_DISABLE_AGENT_HINT", "1")
     import mlflow
 
     mlflow.set_tracking_uri(TRACKING_URI)

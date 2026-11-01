@@ -1,0 +1,17 @@
+# окружение
+.venv/
+__pycache__/
+.pytest_cache/
+
+# артефакты запусков и базы (сдаются отдельно архивом)
+runs/
+runs_debug/
+mlartifacts/
+mlruns/
+mlflow.db
+optuna.db
+optuna_debug.db
+
+# методички преподавателя (лежат рядом для удобства)
+LR0_experiment_harness.pdf
+00_course_rules.pdf

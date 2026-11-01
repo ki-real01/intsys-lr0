@@ -1,0 +1,27 @@
+{
+  "datasets": {
+    "digits": {
+      "source": "sklearn.datasets.load_digits (копия UCI Optical Recognition of Handwritten Digits, тестовая часть)",
+      "version": "scikit-learn==1.9.1",
+      "records_total": 1797,
+      "records_used": 1797,
+      "excluded": 0,
+      "excluded_reason": "нет",
+      "features": "64 признака (пиксели 8x8, значения 0..16), при загрузке делятся на 16",
+      "labels": "цифры 0..9",
+      "split_rule": "стратифицированно по классам: train_test_split(test_size=0.2, random_state=split_seed) отделяет test, затем train_test_split(test_size=0.25, random_state=split_seed) от остатка отделяет val",
+      "split_seed": 0,
+      "split_sizes": {
+        "train": 1077,
+        "val": 360,
+        "test": 360
+      },
+      "files": {
+        "data/split.json": {
+          "sha256": "7df155242cf6ca79c0a2a036b97ded4e63ae33e84e3502305cc28cd6131e3d44",
+          "records": 1797
+        }
+      }
+    }
+  }
+}
